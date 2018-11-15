@@ -32,7 +32,6 @@ browser = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chr
 # chrome_options.add_argument('--disable-dev-shm-usage')
 # chrome_options.add_argument('--headless')
 # browser = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chrome_options)
-# browser.get('https://www.google.com/')
 
 
 results = {}
