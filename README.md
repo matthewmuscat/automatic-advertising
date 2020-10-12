@@ -5,13 +5,14 @@ Completely automate your mass advertising to companies of your choosing. Filter 
 This tool scrapes company data on Yellow Pages which is stored in a local Postgres database. This data is then fed, on execution, dynamically into the website template of the associated company type, which is then automatically sent through Mailgun to the targeted companies. 
 
 ### Guide
-**config.py** - localized config file for Mailgun & Postgres credentials.
+``config.py`` - localized config file for Mailgun & Postgres credentials.
 
-**emailText.py** - Email description template configuration.
+[Email description template configuration](https://github.com/matthewmuscat/automatic-advertising/blob/master/emailText.py)
 
-**main.py** - Sets up database, fetches company data and stores into database.
+[Sets up database, fetches company data and stores into database](https://github.com/matthewmuscat/automatic-advertising/blob/master/main.py)
 
-**send_emails.py** - Processing stored data and fed into website templates. 
+[Processing stored data and fed into website templates](https://github.com/matthewmuscat/automatic-advertising/blob/master/main.py)
+
 
 ```python send_emails.py``` will execute the program, sending the desired amount of emails as set in the code.
 
