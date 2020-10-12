@@ -1,10 +1,19 @@
-# automatic_advertising
-A project that scrapes business' on yellow pages, feeds the business data dynamically through a custom generated demo website, which is then automatically fed through mailgun and sent out to the scraped business'. This work consisted of a python based stack with python and flask in the backend running on an ubuntu server, and using jinja2, html5, css3, js and jquery for the frontend. 
+# ✨ Automatic Advertising ✨
+Completely automate your mass advertising to companies of your choosing. Filter through company types (restaurant, barber, etc) and locations to target a specific audience. Customise your website templates and email descriptions, and get to work!
 
-**config.py** - Mailgun config data for sending emails
+### Technical Description
+This tool scrapes company data on Yellow Pages which is stored in a local Postgres database. This data is then fed, on execution, dynamically into the website template of the associated company type, which is then automatically sent through Mailgun to the targeted companies. 
 
-**emailText.py** - Email content to be sent, sorted by different factors such as location, if they have a website or not, etc.
+### Guide
+**config.py** - localized config file for Mailgun & Postgres credentials.
 
-**main.py** - The main bulk of the program. Setting up database, fetching business data and storing into database.
+**emailText.py** - Email description template configuration.
 
-**send_emails.py** - Fetching data from database and processing it, dynamically feeding it into the demo website. calling `python send_emails.py` will execute the program, sending the desired amount of emails as set in the code.
+**main.py** - Sets up database, fetches company data and stores into database.
+
+**send_emails.py** - Processing stored data and fed into website templates. 
+
+```python send_emails.py``` will execute the program, sending the desired amount of emails as set in the code.
+
+### Stack
+Python, Flask, Jinja2 + core Web Development.
