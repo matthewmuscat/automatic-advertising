@@ -5,19 +5,15 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import traceback
 from config import MAILGUN_URL, MAILGUN_SENDER, MAILGUN_KEY, DBHOST, DBNAME, DBPASS, DBUSER, EMAIL, EMAILPASS
-from emailText import email_message_template, email_subject_template, email_message_template_text, email_subject_if_sent, email_msg_if_sent
+from email_config import email_message_template, email_subject_template, email_message_template_text, email_subject_if_sent, email_msg_if_sent
 import smtplib
 
-dbname = DBNAME 
-dbuser = DBUSER 
-dbhost = DBHOST 
-dbpass = DBPASS
 _email = EMAIL 
 _emailpass = EMAILPASS
 
 # Initialise Database Connection
 try:
-  conn = psycopg2.connect(dbname=dbname, user=dbuser, host=dbhost, password=dbpass)
+  conn = psycopg2.connect(dbname=DBNAME, user=DBUSER, host=DBHOST, password=DBPASS)
 except psycopg2.Error as e:
   print(e)
 
