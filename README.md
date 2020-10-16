@@ -7,11 +7,11 @@ This tool scrapes company data on Yellow Pages which is stored in a local Postgr
 ### Guide
 ``config.py`` - localized config file for Mailgun & Postgres credentials.
 
-[Email description template configuration](https://github.com/matthewmuscat/automatic-advertising/blob/master/emailText.py)
+[Email description template configuration](https://github.com/matthewmuscat/automatic-advertising/blob/master/email_config.py)
 
-[Sets up database, fetches company data and stores into database](https://github.com/matthewmuscat/automatic-advertising/blob/master/main.py)
+[Sets up database, fetches company data and stores into database](https://github.com/matthewmuscat/automatic-advertising/blob/master/store_data.py)
 
-[Processing stored data and fed into website templates](https://github.com/matthewmuscat/automatic-advertising/blob/master/main.py)
+[Processing stored data and fed into website templates](https://github.com/matthewmuscat/automatic-advertising/blob/master/send_emails.py)
 
 
 ```python send_emails.py``` will execute the program, sending the desired amount of emails as set in the code.
